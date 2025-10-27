@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2b7fd4;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    background-color: #2b7fd4;
+    padding: 1rem;
+    text-align: center;
+}
+
+#searchBox {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.note {
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.25);
+}
+
+.note h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.note .category {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.note pre {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.note code {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2b7fd4;
+    color: white;
+    margin-top: 3rem;
+}

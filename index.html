@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Computing Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Web Computing Diary Book</h1>
+        <p>Joey Jahanshahi</p>
+    </header>
+
+    <nav>
+        <input type="text" id="searchBox" placeholder="Search topics...">
+    </nav>
+
+    <main id="notesContainer">
+        <!-- Notes will be loaded here -->
+    </main>
+
+    <footer>
+        <p> Comp 4537 - Joey Jahanshahi</p>
+    </footer>
+
+    <script>
+        let allNotes = [];
+
+        // Load notes
+        fetch('notes.json')
+            .then(response => response.json())
+            .then(notes => {
+                allNotes = notes;
+                showNotes(notes);
+            });
+
+        // Show notes on page
+        function showNotes(notes) {
+            const container = document.getElementById('notesContainer');
+            let html = '';
+            
+            for (let i = 0; i < notes.length; i++) {
+                html += '<div class="note">';
+                html += '<h2>' + notes[i].title + '</h2>';
+                html += '<span class="category">' + notes[i].category + '</span>';
+                html += '<p>' + notes[i].body + '</p>';
+                if (notes[i].code) {
+                    html += '<pre><code>' + notes[i].code + '</code></pre>';
+                }
+                html += '</div>';
+            }
+            
+            container.innerHTML = html;
+        }
+
+        // Search
+        document.getElementById('searchBox').addEventListener('input', function(e) {
+            const search = e.target.value.toLowerCase();
+            const filtered = [];
+            
+            for (let i = 0; i < allNotes.length; i++) {
+                const note = allNotes[i];
+                if (note.title.toLowerCase().includes(search) || 
+                    note.body.toLowerCase().includes(search)) {
+                    filtered.push(note);
+                }
+            }
+            
+            showNotes(filtered);
+        });
+    </script>
+</body>
+</html>

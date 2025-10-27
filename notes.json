@@ -1,0 +1,247 @@
+[
+  {
+    "id": 1,
+    "title": "3 Components of Main Web Application",
+    "category": "Web Architecture",
+    "body": "Presentation (UI), Application (Logic), Data Layer (Database)",
+    "code": ""
+  },
+  {
+    "id": 2,
+    "title": "Separation of Concern",
+    "category": "Design Patterns",
+    "body": "A design pattern where different parts are divided into specific sections. (easier to maintain + edit)",
+    "code": ""
+  },
+  {
+    "id": 3,
+    "title": "4 Pillars of OOP",
+    "category": "Programming Concepts",
+    "body": "Encapsulation, Inheritance, Polymorphism, Abstraction",
+    "code": ""
+  },
+  {
+    "id": 4,
+    "title": "Elements of Chrome Dev Tools",
+    "category": "Development Tools",
+    "body": "Elements (HTML), Console (Execute JS), Source (Debug), Network (HTTP Monitoring), Application (Local storage, session storage, etc)",
+    "code": ""
+  },
+  {
+    "id": 5,
+    "title": "What is Internet Software Architecture",
+    "category": "Web Architecture",
+    "body": "Refers to the structure design of an application",
+    "code": ""
+  },
+  {
+    "id": 6,
+    "title": "What is Local Storage",
+    "category": "Browser Storage",
+    "body": "Browser based storage, persisting even if the tab is closed. Stored in key-value pairs, Capacity = 5-10MB per domain",
+    "code": "// Store data\nlocalStorage.setItem('username', 'john');\n\n// Get data\nlet user = localStorage.getItem('username');\n\n// Remove data\nlocalStorage.removeItem('username');\n\n// Clear all\nlocalStorage.clear();"
+  },
+  {
+    "id": 7,
+    "title": "Benefits of Studying Arch Patterns",
+    "category": "Web Architecture",
+    "body": "Helps us better evaluate efficiency, robustness, security.",
+    "code": ""
+  },
+  {
+    "id": 8,
+    "title": "Types of Design Patterns",
+    "category": "Web Architecture",
+    "body": "Layered (N-tiers), each layer = functional element. Microservice (components are separated and communicated via API Gateway and router). Monolithic (All composed in one place). Hexagonal (Decouple business Logic from external)",
+    "code": ""
+  },
+  {
+    "id": 9,
+    "title": "Local Storage vs Session Storage",
+    "category": "Browser Storage",
+    "body": "Local storage has no expiration date while session data does expire after a certain amount of time. This amount of time can usually be chosen.",
+    "code": ""
+  },
+  {
+    "id": 10,
+    "title": "RESTful API",
+    "category": "API",
+    "body": "Representation state transfer is an arch style not a pattern for API communication",
+    "code": ""
+  },
+  {
+    "id": 11,
+    "title": "5 Core Elements",
+    "category": "API",
+    "body": "Client server (separation of concerns), Stateless (each requires its own content), Layered System (Multilayer Client).",
+    "code": ""
+  },
+  {
+    "id": 12,
+    "title": "Micro SAAS via Rest",
+    "category": "Microservices",
+    "body": "Light weight functionality. They are independent components, don't depend on each other. Independent components that don't directly depend on each other. Benefit: Productivity + Don't need to save.",
+    "code": ""
+  },
+  {
+    "id": 13,
+    "title": "HTTP Methods",
+    "category": "HTTP",
+    "body": "GET (Read/Write), POST (Create new data), PUT (Update data), DELETE (Remove certain data).",
+    "code": ""
+  },
+  {
+    "id": 14,
+    "title": "JSON/Object",
+    "category": "JavaScript Basics",
+    "body": "Converting between JSON and Objects",
+    "code": "let myJSON = JSON.stringify(myObj);\nlet myObj = JSON.parse(myJSON);"
+  },
+  {
+    "id": 15,
+    "title": "HTTP Context",
+    "category": "HTTP",
+    "body": "Req = a message from client -> Server, Res = message from server -> client.",
+    "code": ""
+  },
+  {
+    "id": 16,
+    "title": "Status Codes",
+    "category": "HTTP",
+    "body": "200 (Okay), 201 (Created), 204 (No Content), 400 (Bad Request), 404 (Not Found), 500 (Server Error)",
+    "code": ""
+  },
+  {
+    "id": 17,
+    "title": "Header",
+    "category": "HTTP",
+    "body": "Metadata sent with request: auth, content type",
+    "code": ""
+  },
+  {
+    "id": 18,
+    "title": "Body",
+    "category": "HTTP",
+    "body": "The actual data being sent in a request or response",
+    "code": ""
+  },
+  {
+    "id": 19,
+    "title": "CRUD",
+    "category": "API",
+    "body": "CRUD = POST, GET, PUT, DELETE",
+    "code": ""
+  },
+  {
+    "id": 20,
+    "title": "NodeJS",
+    "category": "Backend",
+    "body": "A JS runtime environment that runs on the server. Allows to work backend code via JS. Advantage: Fast + efficient, large ecosystem.",
+    "code": ""
+  },
+  {
+    "id": 21,
+    "title": "Module",
+    "category": "NodeJS",
+    "body": "Reusable block of code -> http, fs, url, path",
+    "code": ""
+  },
+  {
+    "id": 22,
+    "title": "CORS (Cross-Origin Resource Sharing)",
+    "category": "Web Security",
+    "body": "Browser security feature which prevents requests from specific domains. Usually CORS makes it so that you can only get HTTP request from your own domain.",
+    "code": "// Server-side (Node.js/Express)\napp.use((req, res, next) => {\n  res.header('Access-Control-Allow-Origin', '*');\n  res.header('Access-Control-Allow-Methods', 'GET,POST');\n  next();\n});"
+  },
+  {
+    "id": 23,
+    "title": "AJAX",
+    "category": "JavaScript Basics",
+    "body": "It allows sending http requests from within an html page without refreshing. Used for dynamic content updates. Most professional websites use this I noticed.",
+    "code": ""
+  },
+  {
+    "id": 24,
+    "title": "SOP (Same Origin Protocol)",
+    "category": "Web Security",
+    "body": "AJAX requests must come from its own server",
+    "code": ""
+  },
+  {
+    "id": 25,
+    "title": "PreFlight",
+    "category": "HTTP",
+    "body": "Browser sends http option before PUT/POST to see which headers are available",
+    "code": ""
+  },
+  {
+    "id": 26,
+    "title": "First Class Function",
+    "category": "JavaScript Basics",
+    "body": "Can take other functions as arguments.",
+    "code": ""
+  },
+  {
+    "id": 27,
+    "title": "Call Back Function",
+    "category": "JavaScript Basics",
+    "body": "Function passed to another function to return it.",
+    "code": ""
+  },
+  {
+    "id": 28,
+    "title": "Async, Why its Tricky",
+    "category": "Asynchronous JS",
+    "body": "Operations fail or succeed we need to handle both cases, solution: return a resolve object().",
+    "code": ""
+  },
+  {
+    "id": 29,
+    "title": "Promises",
+    "category": "Asynchronous JS",
+    "body": "Objects which represent a future result: 3 Stages: Pending, Fulfilled, Rejected",
+    "code": "let promise = new Promise((resolve, reject) => {\n  let success = true;\n  if (success) {\n    resolve('Success!');\n  } else {\n    reject('Failed!');\n  }\n});\n\npromise.then(result => console.log(result))\n       .catch(error => console.log(error));"
+  },
+  {
+    "id": 30,
+    "title": "Common Pit Falls",
+    "category": "Asynchronous JS",
+    "body": "A promise only settles once, so calling resolve again does pretty much nothing.",
+    "code": ""
+  },
+  {
+    "id": 31,
+    "title": "GET vs POST Size",
+    "category": "HTTP",
+    "body": "GET (2048 Chars in URL), POST has no such limit in URL",
+    "code": ""
+  },
+  {
+    "id": 32,
+    "title": "XMLHttpRequest",
+    "category": "JavaScript Basics",
+    "body": "Ready stages values 0,1,2,3,4 in this order: Unsent (created, Open() not called), Opened (open() called), Header_received (send() called), Loading (response loading), DONE (Operation Complete)",
+    "code": ""
+  },
+  {
+    "id": 33,
+    "title": "Web API POST Request",
+    "category": "API",
+    "body": "Making a POST request to send data to a server",
+    "code": "fetch('https://api.example.com/data', {\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json'\n  },\n  body: JSON.stringify({name: 'John', age: 30})\n})\n.then(res => res.json())\n.then(data => console.log(data));"
+  },
+  {
+    "id": 34,
+    "title": "Express App.js Basic Setup",
+    "category": "Backend",
+    "body": "Basic Express.js server setup",
+    "code": "const express = require('express');\nconst app = express();\n\napp.use(express.json());\n\napp.get('/', (req, res) => {\n  res.send('Hello World');\n});\n\napp.listen(3000, () => {\n  console.log('Server running on port 3000');\n});"
+  },
+  {
+    "id": 35,
+    "title": "Math.js Import",
+    "category": "NodeJS",
+    "body": "Importing and using the math.js library for advanced math operations",
+    "code": "// Node.js\nconst math = require('mathjs');\n\n// Calculate\nlet result = math.sqrt(16);\nconsole.log(result); // 4\n\n// Complex operations\nlet answer = math.evaluate('12 * (3 + 4)');\nconsole.log(answer); // 84"
+  }
+]
