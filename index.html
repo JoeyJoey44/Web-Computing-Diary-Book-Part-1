@@ -17,7 +17,6 @@
     </nav>
 
     <main id="notesContainer">
-        <!-- Notes will be loaded here -->
     </main>
 
     <footer>
@@ -27,7 +26,6 @@
     <script>
         let allNotes = [];
 
-        // Load notes
         fetch('notes.json')
             .then(response => response.json())
             .then(notes => {
@@ -35,7 +33,6 @@
                 showNotes(notes);
             });
 
-        // Show notes on page
         function showNotes(notes) {
             const container = document.getElementById('notesContainer');
             let html = '';
@@ -54,7 +51,7 @@
             container.innerHTML = html;
         }
 
-        // Search
+
         document.getElementById('searchBox').addEventListener('input', function(e) {
             const search = e.target.value.toLowerCase();
             const filtered = [];

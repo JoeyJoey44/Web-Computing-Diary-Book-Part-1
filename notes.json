@@ -243,5 +243,38 @@
     "category": "NodeJS",
     "body": "Importing and using the math.js library for advanced math operations",
     "code": "// Node.js\nconst math = require('mathjs');\n\n// Calculate\nlet result = math.sqrt(16);\nconsole.log(result); // 4\n\n// Complex operations\nlet answer = math.evaluate('12 * (3 + 4)');\nconsole.log(answer); // 84"
+  },
+
+
+  {
+    "id": 36,
+    "title": "Hosting ML on Azure*",
+    "category": "Cloud / Machine Learning",
+    "body": "Learned how to deploy and host machine learning models on Azure using a virtual machine. Gained experience in setting up the environment, configuring the VM, and running models in a cloud setting.",
+    "code": ""
+  },
+  {
+    "id": 37,
+    "title": "Intro to React*",
+    "category": "Frontend Development",
+    "body": "Learned the basics of React, including components, props, and state. It was interesting seeing how React handles UI updates more efficiently compared to plain HTML/CSS/JS.",
+    "code": ""
+  },
+  {
+    "id": 38,
+    "title": "Learning TailwindCSS*",
+    "category": "Frontend Development",
+    "body": "Learned how to use TailwindCSS. It felt very different from traditional HTML/CSS, but it was surprisingly intuitive and fast once I got used to the utility-class approach.",
+    "code": ""
+  },
+  {
+    "id": 39,
+    "title": "Milestone #1 Group Project Experience*",
+    "category": "Project Work",
+    "body": "Milestone #1 for the group project was a great learning experience. I learned how to track API usage per user and implement safeguards to prevent excessive API calls. Instead of enforcing a strict limit like 20 calls, we chose to show the user a warning when they were using the API too frequently.",
+    "code": ""
   }
+
+
+
 ]
